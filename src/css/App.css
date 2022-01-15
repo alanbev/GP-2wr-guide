@@ -1,0 +1,32 @@
+main{
+  align-self: auto;
+  background-color: lightcyan;
+}
+
+
+#allSymptomsHolder{
+display: flex;
+  }
+
+.blocktitle{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  }
+
+.questionblock{
+  background-color: antiquewhite;
+  border:black solid ;
+  margin: 20px;
+  }
+#twroptions{
+  display: inline
+
+}
+
+#displayNTWR{
+display:block;
+margin-top:20px
+
+}

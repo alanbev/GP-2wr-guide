@@ -1,0 +1,23 @@
+{symptom:"",
+displayAs:"" ,
+coloWeight:"",
+ugiWeight:,
+gynaeWeight:,
+urolWeight:,
+},
+
+{symptom:"",
+displayAs: "",
+coloWeight:,
+ugiWeight:,
+gynaeWeight:,
+urolWeight:,
+},
+
+{symptom:"",
+displayAs: "",
+coloWeight:,
+ugiWeight:,
+gynaeWeight:,
+urolWeight:,
+}
