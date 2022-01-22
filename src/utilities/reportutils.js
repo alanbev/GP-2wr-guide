@@ -1,11 +1,13 @@
 //imports for the validators to be used- these also need to be added to the validators list below
-import validateColo from './validators/validatecolo.js'
+import buildSymptomScores from './buildSymptomScores.js'
+import validatorIndex from './validators/validatorIndex.js'
+
 
 
 
 const reportUtils={
 
-validators:[validateColo],// list of validators to use
+validators:[],// list of validators to use]
 
 
 getAge(dob)//calculates age from date of birth
@@ -16,9 +18,25 @@ getAge(dob)//calculates age from date of birth
     return age
 },
 
-orderPathways(validPathways)
+orderPathways(formData)
 {
-    var paths=Object.entries(validPathways)
+    let symptomScores=buildSymptomScores(validatorIndex);
+    formData.scoredPathsToUse={};
+    formData.pathsToUse.forEach(path=>
+        {
+            formData.symptomList.forEach(symptom=>
+                {
+                //let validatorIndexEntry =validatorIndex[path]
+                //if (validatorIndexEntry.symptoms.includes(symptom))
+                    if (!formData.scoredPathsToUse.hasOwnProperty(path))
+                    {formData.scoredPathsToUse[path]=symptomScores[symptom]}
+                else
+                {formData.scoredPathsToUse[path]+=symptomScores[symptom]}
+        })})
+            
+
+    
+    var paths=Object.entries(formData.scoredPathsToUse)
     paths.sort((a, b) => b[1] - a[1])
     return paths
 },
@@ -26,12 +44,29 @@ orderPathways(validPathways)
 ValidateTwr(formData)// root method for validation- sends formdata to 
 {
     formData.age=this.getAge(formData.dob);
+    formData.twrValid={}
+    formData.message={}
+    console.log(formData)
+    this.findValidators(formData)
     this.validators.forEach((funct)=>{funct(formData)})
-    let paths=this.orderPathways(formData.validPathways)
-    formData.paths=paths
+    let paths=this.orderPathways(formData)
+    formData.sortedPaths=paths
     return formData
 },
-
+findValidators(formData)
+    {
+    formData.pathsToUse=[]
+    formData.symptomList.forEach(symptom=>{
+    validatorIndex.forEach(pathway=>{
+    if (pathway.symptoms.includes (symptom))
+        {
+        this.validators.push(pathway.validator)
+        formData.pathsToUse.push(pathway.path)
+        formData.twrValid[pathway.path]=false
+        formData.message[pathway.path]=""
+        }
+}
+)})},
 }
 
 

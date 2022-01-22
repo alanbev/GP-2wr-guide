@@ -37,7 +37,9 @@ initialValuesObjectBuilder(objectList)
         if (values[key])
         symptomList.push(key)
         }
+        symptomList.splice(0,1)//removes dob
         values.symptomList=symptomList
+        console.log("values", values)
          return values
 },
 

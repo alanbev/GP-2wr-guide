@@ -10,7 +10,7 @@ function NonTwrRefOption(props) {
 
 return (  
 <>
-    <div id="twrOption">Make referal (not Two Week Rule) <button id="nonTWR" onClick={clickFunction}>Referal Form </button> </div>
+    <div id="twrOption">Make {props.pathway} referal (not Two Week Rule) <button id="nonTWR" onClick={clickFunction}>Referal Form </button> </div>
 </>
     );
 }

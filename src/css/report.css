@@ -1,0 +1,17 @@
+.pathDisplayBlocktwr{
+    border:solid rgba(256, 0, 0, 0.5);
+    background-color:red
+}
+.pathDisplayBlockConditional{
+    border:solid magenta;
+    background-color: lightgoldenrodyellow;
+    }
+
+.pathDisplayBlockNotTwr{
+    border:solid magenta;
+    background-color: lightgreen
+    }
+
+.pathMessage{
+    margin-bottom: 10px;
+}
