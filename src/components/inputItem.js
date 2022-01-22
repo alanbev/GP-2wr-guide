@@ -1,7 +1,6 @@
 import React from 'react';
 import {Field} from 'formik';  
 
-
 function InputItem(props) {
   
     return (

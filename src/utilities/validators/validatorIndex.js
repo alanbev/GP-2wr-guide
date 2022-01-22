@@ -7,9 +7,6 @@ symptoms:["weightLoss","abdoPain","rectalBleeding", "anaemia", "idAnaemia", "cob
 validator:validateColo,
 displayAs:"Colorectal"
 }
-
-
-
 ]
 
 

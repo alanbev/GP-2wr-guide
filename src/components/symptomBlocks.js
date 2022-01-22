@@ -10,7 +10,6 @@ return (
       <div>{props.eachTypeOfSymptom[1]}</div>
     </div>
 )
-
 }
 
 export default SymptomBlock

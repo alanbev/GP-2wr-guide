@@ -11,5 +11,4 @@ const symptomsIndex=
 ]
 
 
-
 export default symptomsIndex

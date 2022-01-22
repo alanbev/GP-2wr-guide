@@ -10,7 +10,6 @@ function PathDisplayBlock(props){
 const [header,setHeader]=useState();
 const [displayStyle, setDisplayStyle]=useState()
 
-
 useEffect(()=>
     {
     validatorIndex.forEach(pathway=>

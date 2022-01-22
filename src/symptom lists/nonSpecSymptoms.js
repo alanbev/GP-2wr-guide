@@ -29,18 +29,10 @@ const nonSpecSymptomsList=
     },  
     {symptom:"anaemia",
     displayAs: "Anaemia without evidence of iron deficiency",
-    coloWeight:2,
-    ugiWeight:2,
-    gynaeWeight:1,
-    urolWeight:1,
     },
 
     {symptom:"idAnaemia",
     displayAs: "Iron Deficiency Anaemia(microcytosis or low ferritin)",
-    coloWeight:2,
-    ugiWeight:2,
-    gynaeWeight:1,
-    urolWeight:1,
     }
 ]
 

@@ -21,4 +21,5 @@ console.log("symptom score",symptomScore)
 return symptomScore
 }
 
+
 export default buildSymptomScores
