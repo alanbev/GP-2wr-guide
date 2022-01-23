@@ -13,8 +13,6 @@ function Report(props)
   let modifiedFormData=reportUtils.ValidateTwr(formData)
   let pathBlocks=modifiedFormData.sortedPaths.map((eachPath,index)=><PathDisplayBlock eachPath={eachPath} modifiedFormData={modifiedFormData} key={index}/>)
 
-  
-
    return(
    <main>
    <h1>Referal Options</h1>

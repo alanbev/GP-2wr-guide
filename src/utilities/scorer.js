@@ -11,4 +11,5 @@ const scorer=(symptomlistsToScore,formData)=> {
 
         return score
     }
+    
         export default scorer

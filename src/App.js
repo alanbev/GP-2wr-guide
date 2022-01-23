@@ -6,7 +6,6 @@ import ColorectalForm from './routes/colorectalForm.js'
 import NonTwrForm from './routes/nonTWRref'
 
 
-
 function App(props) {
 
     const [formData, setFormData]= useState();
@@ -20,7 +19,6 @@ function App(props) {
       <Route exact path='/GP-2wr-aid/nonTWR' element={<NonTwrForm formData={formData}/>}></Route>
     </Routes>
     </BrowserRouter>)
-
 }
 
 export default App

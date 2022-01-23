@@ -2,9 +2,6 @@
 import buildSymptomScores from './buildSymptomScores.js'
 import validatorIndex from './validators/validatorIndex.js'
 
-
-
-
 const reportUtils={
 
 validators:[],// list of validators to use]

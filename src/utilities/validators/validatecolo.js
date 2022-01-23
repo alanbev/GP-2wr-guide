@@ -20,5 +20,4 @@ else if( (formData.cobh || formData.idAnaemia)//check DG30 criteria for recommen
 return formData
 }
 
-
 export default validateColo
