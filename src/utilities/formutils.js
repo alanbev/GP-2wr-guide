@@ -10,7 +10,7 @@ initialValuesObjectBuilder(objectList)
     //manual enty of initalValues goes here
     let newObject=
     {
-    dob:new Date(),
+    age:"",
     }
 
 //adds enties to initialValues from the symotom lists
@@ -37,7 +37,7 @@ initialValuesObjectBuilder(objectList)
         if (values[key])
         symptomList.push(key)
         }
-        symptomList.splice(0,1)//removes dob
+        symptomList.splice(0,1)//removes age
         values.symptomList=symptomList
         console.log("values", values)
          return values

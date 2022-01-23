@@ -27,7 +27,7 @@ const allSymptoms=typesOfSymptoms.map((eachTypeOfSymptom, key)=><SymptomBlock ea
 const initialValues=formUtils.initialValuesObjectBuilder(symptomsIndex)
 
 const validationSchema =Yup.object({
-dob:Yup.date().required("Please enter the Patient's date of birth"),
+age:Yup.number().required("Please enter the Patient's age"),
   })
 
 const onSubmit= (values)=>{
@@ -45,9 +45,9 @@ buildSymptomScores(validatorIndex)
    validationSchema={validationSchema}
    >
 <Form>
-  <label htmlFor='dob'>Date of Birth</label>
-  <Field type ="date" id="dob" name="dob" required/>
-  <ErrorMessage name="dob" >
+  <label htmlFor='age'>Age</label>
+  <Field type ="number" id="age" name="age" required/>
+  <ErrorMessage name="age" >
   {errorMsg=><div className="error">{errorMsg}</div>}
   </ErrorMessage>
   <div id="allSymptomsHolder">{allSymptoms}</div>

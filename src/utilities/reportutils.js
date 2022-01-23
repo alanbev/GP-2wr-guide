@@ -10,7 +10,7 @@ const reportUtils={
 validators:[],// list of validators to use]
 
 
-getAge(dob)//calculates age from date of birth
+getAge(dob)//calculates age from date of birth- not used in current version since form changed to use age
 {
     const dateToday= Date.now()
     const dateOfBirth=new Date(dob)
@@ -43,7 +43,8 @@ orderPathways(formData)
 
 ValidateTwr(formData)// root method for validation- sends formdata to 
 {
-    formData.age=this.getAge(formData.dob);
+    //formData.age=this.getAge(formData.dob);  //taken out of use when incput conveted to age 
+    formData.age=parseInt(formData.age)
     formData.twrValid={}
     formData.message={}
     console.log(formData)
