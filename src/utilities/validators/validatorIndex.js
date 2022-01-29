@@ -4,6 +4,7 @@ import validateMesothelioma from "./validateMesothelioma";
 import validateOesophagus from "./ValidateOesophagus";
 import validatePancreas from "./validatePancreas";
 import validateStomach from "./validateStomach";
+import validateLiverGb from "./validateLiverGb";
 
 
 
@@ -121,6 +122,16 @@ symptoms:[
     ],
 validator:validateStomach,
 displayAs:"Stomach Cancer",
+requirements:"",
+},
+
+{
+path:"liverGb",
+symptoms:[
+    "LiverGbMass"
+    ],
+validator:validateLiverGb,
+displayAs:"Liver or Gall Bladder Cancer",
 requirements:"",
 }
 ]

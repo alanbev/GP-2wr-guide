@@ -27,7 +27,7 @@ orderPathways(formData)
                 {formData.scoredPathsToUse[path]=symptomScores[symptom]}
                 else
                 {formData.scoredPathsToUse[path]+=symptomScores[symptom]}
-                
+
                  // boosts priority of path if two week rule valid    
                 if (formData.twrValid[path])
                     {
