@@ -5,6 +5,7 @@ import validateOesophagus from "./ValidateOesophagus";
 import validatePancreas from "./validatePancreas";
 import validateStomach from "./validateStomach";
 import validateLiverGb from "./validateLiverGb";
+import validateBreast from "./validateBreast";
 
 
 
@@ -132,6 +133,21 @@ symptoms:[
     ],
 validator:validateLiverGb,
 displayAs:"Liver or Gall Bladder Cancer",
+requirements:"",
+},
+
+{
+path:"breast",
+symptoms:[
+    "breastLump",
+    "nippleDischarge",
+    "nippleRetraction",
+    "breastOther",
+    "breastSkinChanges",
+    "axillaLump",
+    ],
+validator:validateBreast,
+displayAs:"Breast",
 requirements:"",
 }
 ]

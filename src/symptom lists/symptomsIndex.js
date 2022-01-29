@@ -5,6 +5,7 @@ import nonSpecSymptomsList from './nonSpecSymptoms.js';
 import respiratorySymptoms from './respiratorySymptoms.js';
 import painSymptoms from './painSymptoms.js';
 import upperGiSymptoms from './upperGiSymptoms.js';
+import breastSymptoms from './breastSymptoms.js';
 
 //array of symptoms lists to be displayed in the form -once added here they will display with not further edits needed format is [name of symptoms list, Tile to display at top of symptoms block]
 const symptomsIndex=
@@ -14,8 +15,10 @@ const symptomsIndex=
 [abdoSymptomsList,"Abdominal Symptoms"],
 [upperGiSymptoms, "Upper GI Symptoms"],
 [coloSymptomsList,"Colorectal Symptoms"],
-[respiratorySymptoms, "Respiratory Symptoms"]
+[respiratorySymptoms, "Respiratory Symptoms"],
+[breastSymptoms,"Breast"]
 ]
+
 
 
 export default symptomsIndex 
