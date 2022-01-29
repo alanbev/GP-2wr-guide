@@ -12,18 +12,27 @@ const nonSpecSymptomsList=
     {symptom:"appetiteLoss",
     displayAs:"Appetite Loss"},
 
+    {symptom:"nausea",
+    displayAs:"Nausea"},
 
     {symptom:"anaemia",
     displayAs: "Anaemia without evidence of iron deficiency",
     },
 
     {symptom:"idAnaemia",
-    displayAs: "Iron Deficiency Anaemia(microcytosis or low ferritin)",
+    displayAs: "Iron Deficiency Anaemia(microcytosis or low ferritin",
     },
 
     {symptom:"thrombocytosis",
     displayAs:"Thrombocytosis"
-}
+    },
+
+    {symptom:"jaundice",
+    displayAs:"Jaundice"
+    },
+
+    {symptom:"diabetes",
+    displayAs: "New Onset Diabetes"}
 ]
 
 

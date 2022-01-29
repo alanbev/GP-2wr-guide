@@ -7,6 +7,7 @@ main{
 
 #allSymptomsHolder{
 display: flex;
+flex-wrap: wrap;
   }
 
 .blocktitle{

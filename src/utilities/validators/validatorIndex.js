@@ -1,6 +1,9 @@
 import validateColo from "./validateColo";
 import validateLung from "./validateLung";
 import validateMesothelioma from "./validateMesothelioma";
+import validateOesophagus from "./ValidateOesophagus";
+import validatePancreas from "./validatePancreas";
+import validateStomach from "./validateStomach";
 
 
 
@@ -16,7 +19,8 @@ symptoms:[
     "cobh", 
     "fit"],
 validator:validateColo,
-displayAs:"Colorectal"
+displayAs:"Colorectal",
+requirements:"Two Fit tests, Colorectal blood bundle"
 },
 
 {
@@ -37,8 +41,9 @@ symptoms:[
     ,"chestSignsLung"
     ,"chestInfection"],
 validator:validateLung,
-displayAs:"Lung"
-    },
+displayAs:"Lung",
+requirements:"",
+},
 
     {
 path:"mesothelioma",  
@@ -57,9 +62,67 @@ symptoms:[
     ,"chestSignsPleural"
    ],
 validator:validateMesothelioma,
-displayAs:"Mesothelioma"
-    }
+displayAs:"Mesothelioma",
+requirements:"",
+},
 
+{
+path:"oesophagus",
+symptoms:[
+    "weightLoss",
+    "nausea",
+    "anaemia",
+    "idAnaemia",
+    "thrombocytosis",
+    "upperAbdoPain",
+    "dysphagia",
+    "reflux",
+    "dyspepsia",
+    "vomiting",
+    "haematemesis"
+    ],
+validator:validateOesophagus,
+displayAs:"Oesophageal Carcinoma",
+requirements:"",
+},
+
+{
+path: "pancreas",
+symptoms: [
+    "weightLoss",
+    "nausea",
+    "jaundice",
+    "diabetes",
+    "upperAbdoPain",
+    "abdoPain",
+    "backPain",
+    "vomiting",
+    "cobh"],
+validator: validatePancreas,
+displayAs: "Pancreatic Cancer",
+requirements:"",
+},
+
+{
+path:"stomach",
+symptoms:[
+    "upperAbdoPain",
+    "weightLoss",
+    "nausea",
+    "anaemia",
+    "idAnaemia",
+    "thrombocytosis",
+    "upperAbdoPain",
+    "dysphagia",
+    "reflux",
+    "dyspepsia",
+    "vomiting",
+    "haematemesis"
+    ],
+validator:validateStomach,
+displayAs:"Stomach Cancer",
+requirements:"",
+}
 ]
 
 

@@ -23,12 +23,18 @@ orderPathways(formData)
         {
             formData.symptomList.forEach(symptom=>
                 {
-                //let validatorIndexEntry =validatorIndex[path]
-                //if (validatorIndexEntry.symptoms.includes(symptom))
-                    if (!formData.scoredPathsToUse.hasOwnProperty(path))
-                    {formData.scoredPathsToUse[path]=symptomScores[symptom]}
+                if (!formData.scoredPathsToUse.hasOwnProperty(path))
+                {formData.scoredPathsToUse[path]=symptomScores[symptom]}
                 else
                 {formData.scoredPathsToUse[path]+=symptomScores[symptom]}
+                
+                 // boosts priority of path if two week rule valid    
+                if (formData.twrValid[path])
+                    {
+                    formData.scoredPathsToUse[path] += 10 
+                    }
+
+
         })})
             
 

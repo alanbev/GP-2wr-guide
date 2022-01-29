@@ -45,8 +45,8 @@ buildSymptomScores(validatorIndex)
    validationSchema={validationSchema}
    >
 <Form>
-  <label htmlFor='age'>Age</label>
-  <Field type ="number" id="age" name="age" required/>
+  <label htmlFor='age'>Age
+  <Field type ="number" id="age" name="age" required/></label>
   <ErrorMessage name="age" >
   {errorMsg=><div className="error">{errorMsg}</div>}
   </ErrorMessage>

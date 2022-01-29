@@ -7,11 +7,11 @@ function NonTwrRefOption(props) {
   const navigate=useNavigate()
   const clickFunction=()=>{navigate(`../GP-2wr-aid/nonTWR`)}
 
-return (  
-<>
-    <div id="twrOption">Make {props.pathway} referal (not Two Week Rule) <button id="nonTWR" onClick={clickFunction}>Referal Form </button> </div>
-</>
-    );
-}
+  return (  
+  <>
+      <div id="twrOption">Make {props.readablePath} referal (not Two Week Rule) <button id="nonTWR" onClick={clickFunction}>Referal Form </button> </div>
+  </>
+      );
+  }
 
 export default NonTwrRefOption;

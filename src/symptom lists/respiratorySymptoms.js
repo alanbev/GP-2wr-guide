@@ -31,9 +31,6 @@ displayAs:"Shortness of breath"
 displayAs:"Persistent/ recurrent chestinfection"
 },
 
-{symptom:"chestPain",
-displayAs:"Chest pain"
-},
 
 {symptom:"fingerClubbing",
 displayAs:"Finger clubbing"

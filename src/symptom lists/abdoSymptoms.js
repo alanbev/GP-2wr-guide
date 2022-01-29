@@ -1,10 +1,17 @@
 
 const abdoSymptomsList=[
-{symptom:"abdoPain",
-displayAs: "Abdominal Pain"
+{symptom:"upperAbdoMass",
+displayAs:"Epigastric Mass"
+},
+
+{symptom:"LiverGbMass",
+displayAs:"Liver or Gallbladdder Mass"
 },
 
 {symptom:"abdoMass",
-displayAs: "Abdominal Mass"
-} ]
+displayAs: "Other Abdominal Mass"
+} 
+
+]
+
 export default abdoSymptomsList
