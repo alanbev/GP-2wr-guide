@@ -7,14 +7,6 @@ displayAs:"Patient is /has been smoker"
 displayAs:"Asbestos exposure"
 },
 
-{symptom:"cxrLung",
-displayAs:"Chest XR suggesting lung cancer"
-},
-
-{symptom:"cxrPleural",
-displayAs:"Chest XR suggesting pleural disease"
-},
-
 {symptom:"haemoptysis",
 displayAs:"Haemoptysis"
 },

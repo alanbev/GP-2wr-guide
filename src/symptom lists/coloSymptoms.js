@@ -8,10 +8,6 @@
         displayAs: "Change in Bowel Habit"
         },
         
-        {symptom:"fit",
-        displayAs: "Positive FIT test",
-        },
-
         {symptom:"rectalMass",
         displayAs: "Rectal or Anal Mass / Ulcer",
         },

@@ -9,8 +9,12 @@ displayAs:"Upper Abdominal Pain"
 },
 
 {symptom:"abdoPain",
-displayAs: "Abdominal / Pelvic Pain"
+displayAs:"Abdominal Pain"
 },
+{symptom:"pelvicPain",
+displayAs:"Pelvic Pain"
+},
+
 
 {
 symptom:"backPain",

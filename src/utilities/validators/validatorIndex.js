@@ -6,6 +6,7 @@ import validatePancreas from "./validatePancreas";
 import validateStomach from "./validateStomach";
 import validateLiverGb from "./validateLiverGb";
 import validateBreast from "./validateBreast";
+import validateOvarian from "./validateOvarian";
 
 
 
@@ -137,7 +138,7 @@ requirements:"",
 },
 
 {
-path:"breast",
+path:"breast Cancer",
 symptoms:[
     "breastLump",
     "nippleDischarge",
@@ -149,7 +150,30 @@ symptoms:[
 validator:validateBreast,
 displayAs:"Breast",
 requirements:"",
-}
+},
+
+{
+path:"ovarian",
+symptoms:[
+    "weightLoss",
+    "fatigue",
+    "appetiteLoss",
+    "earlySatiety",
+    "abdoPain",
+    "pelvicPain",
+    "distension",
+    "ascites",
+    "cobh",
+    "urinaryFrequency",
+    "ca125",
+    "imagingOvarian"
+        ],
+    validator:validateOvarian,
+    displayAs:"Ovarian Cancer",
+    requirements:"",
+    }
+
+
 ]
 
 
