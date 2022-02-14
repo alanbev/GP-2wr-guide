@@ -36,7 +36,7 @@ const ca125RaisedMessage= "If the CA 125 is 35 or more NICE recommend that an ul
         formData.message.ovarian=considerCa125Message
         }
 
-    if (formData.distension || formData.satiety || formData.appetiteLoss || formData.formData.abdoPain || formData.pelvicPain || formData.urinaryFrequency)
+    if (formData.distension || formData.satiety || formData.appetiteLoss || formData.abdoPain || formData.pelvicPain || formData.urinaryFrequency)
         {
         if (formData.message.ovarian === "")
             {

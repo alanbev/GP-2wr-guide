@@ -7,7 +7,10 @@ import validateStomach from "./validateStomach";
 import validateLiverGb from "./validateLiverGb";
 import validateBreast from "./validateBreast";
 import validateOvarian from "./validateOvarian";
-
+import validateEndometrial from "./validateEndometrial";
+import validateCervical from "./validateCervical.js";
+import validateVulval from "./validateVulval.js";
+import validateVaginal from "./validateVaginal.js";
 
 
 const validatorIndex=[
@@ -138,7 +141,7 @@ requirements:"",
 },
 
 {
-path:"breast Cancer",
+path:"breast",
 symptoms:[
     "breastLump",
     "nippleDischarge",
@@ -170,6 +173,54 @@ symptoms:[
         ],
     validator:validateOvarian,
     displayAs:"Ovarian Cancer",
+    requirements:"",
+    },
+
+    {
+path:"endometrial",
+symptoms:[
+    "diabetes",
+    "haematuria",
+    "vaginalDischarge",
+    "pmBleeding",
+    "anaemia",
+    "idAnaemia",
+    "thrombocytosis",
+    "elevatedGlucose",
+    "imagingEndometrial"
+        ],
+    validator:validateEndometrial,
+    displayAs:"Endometrial Cancer",
+    requirements:"",
+    },
+
+    {
+    path:"cervical",
+    symptoms:[
+    "abnCervix"
+    ],
+    validator:validateCervical,
+    displayAs:"Cervical Cancer",
+    requirements:"",
+    },
+
+    {
+    path:"vulval",
+    symptoms:[
+    "vulvalLump"
+        ],
+    validator:validateVulval,
+    displayAs:"Vulval Cancer",
+    requirements:"",
+    },
+
+    {
+    path:"vaginal",
+    symptoms:[
+        "vaginalMass"
+        ],
+    validator:validateVaginal,
+    displayAs:"Vaginal Cancer",
     requirements:"",
     }
 

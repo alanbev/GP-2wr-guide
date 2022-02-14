@@ -12,6 +12,10 @@ const labTests=
     displayAs:"Thrombocytosis"
     },
 
+    {symptom:"elevatedGlucose",
+    displayAs:"High blood glucose"
+    },
+
     {symptom:"ca125",
     displayAs:"Ca125 35 or more"},
 

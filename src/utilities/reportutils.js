@@ -5,7 +5,9 @@ import validatorIndex from './validators/validatorIndex.js'
 const reportUtils={
 
 validators:[],// list of validators to use]
-
+twrBoost:30,  //amount to elevate path qualifying for 2wr clinic in display
+noMessageDrop:30 //amount to downgrade paths with no 2wr message in display
+,
 
 getAge(dob)//calculates age from date of birth- not used in current version since form changed to use age
 {
@@ -31,7 +33,12 @@ orderPathways(formData)
                  // boosts priority of path if two week rule valid    
                 if (formData.twrValid[path])
                     {
-                    formData.scoredPathsToUse[path] += 10 
+                    formData.scoredPathsToUse[path] += this.twrBoost
+                    }
+                    //drops priority of path if not for 2wr clinic and no 2wr message
+                else if(!formData.message[path])
+                    {
+                    formData.scoredPathsToUse[path] -= this.noMessageDrop
                     }
 
 

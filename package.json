@@ -1,6 +1,6 @@
 {
   "homepage": "http://alanbev.github.io/GP-2wr-aid",
-  "name": "twr_ref_colo",
+  "name": "gp_twr_form",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,7 +1,7 @@
 
 const abdoSymptomsList=[
 {symptom:"distension",
-displayAs:"Persitent abdominal distension / bloating"
+displayAs:"Persistent abdominal distension / bloating"
 },
 
 {symptom:"upperAbdoMass",

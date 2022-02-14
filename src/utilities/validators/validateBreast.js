@@ -1,9 +1,9 @@
 const validateBreast=(formData)=>
     {
     if ((formData.age >= 30 && (formData.breastLump || formData.axillaLump)) ||
-    (formData.age >= 50 && (formData.nippleDischarge || formData.nippleRetraction)) ||
+    (formData.age >= 50 && (formData.nippleDischarge || formData.nippleRetraction ||
     formData.breastOther||
-    formData.breastSkinChanges)
+    formData.breastSkinChanges)))
         {
             formData.twrValid.breast=true
             return formData

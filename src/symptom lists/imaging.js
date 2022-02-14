@@ -10,7 +10,10 @@ const imaging =
 
 
     {symptom:"imagingOvarian",
-    displayAs: "Ultrasound / CT suspicious of ovarian cancer"}
+    displayAs: "Ultrasound / CT suspicious of ovarian cancer"},
+
+    {symptom:"imagingEndometrial",
+    displayAs: "Ultrasound / CT suspicious of endometrial cancer"}
 
 
 
