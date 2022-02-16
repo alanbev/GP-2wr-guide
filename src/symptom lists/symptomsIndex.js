@@ -6,7 +6,9 @@ import respiratorySymptoms from './respiratorySymptoms.js';
 import painSymptoms from './painSymptoms.js';
 import upperGiSymptoms from './upperGiSymptoms.js';
 import breastSymptoms from './breastSymptoms.js';
-import urogenital from './urogenenital.js';
+import urinary from './urinary.js';
+import femaleGenital from './femalegenital.js';
+import maleGenital from './malegenital.js';
 import labTests from './labTests.js';
 import imaging from './imaging.js';
 
@@ -19,10 +21,12 @@ const symptomsIndex=
 [abdoSymptomsList,"Abdominal Symptoms"],
 [upperGiSymptoms, "Upper GI Symptoms"],
 [coloSymptomsList,"Colorectal Symptoms"],
-[urogenital, "Urinary /Genital Symptoms"],
+[urinary, "Urinary Symptoms"],
+[maleGenital, "Male Genital Symptoms"],
+[femaleGenital, "Female Genital Symptoms"],
 [respiratorySymptoms, "Respiratory Symptoms"],
 [breastSymptoms,"Breast"],
-[labTests, "Blood Tests"],
+[labTests, "Lab Tests"],
 [imaging, "Imaging"]
 ]
 

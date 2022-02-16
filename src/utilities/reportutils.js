@@ -57,6 +57,7 @@ ValidateTwr(formData)// root method for validation- sends formdata to
     formData.age=parseInt(formData.age)
     formData.twrValid={}
     formData.message={}
+    formData.investigations=[]
     console.log(formData)
     this.findValidators(formData)
     this.validators.forEach((funct)=>{funct(formData)})

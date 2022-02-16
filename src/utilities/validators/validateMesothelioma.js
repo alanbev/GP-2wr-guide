@@ -5,7 +5,7 @@ const validateMesothelioma=(formData)=>
     return formData
     }
 
-if (formData.Age<40)
+if (formData.Age<40 || formData.cxrLung )
     {
      return formData   
     }

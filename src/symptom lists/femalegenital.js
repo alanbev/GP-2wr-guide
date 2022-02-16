@@ -1,13 +1,5 @@
-const urogenital=
+const femaleGenital=
 [
-{symptom:"urinaryFrequency",
-displayAs:"Urinary Frequency / Urgency"
-},
-
-{symptom:"haematuria",
-displayAs:"Visible Haematuria"
-},
-
 {symptom:"vaginalDischarge",
 displayAs:"Unexplained Vaginal Discharge",
 },
@@ -24,11 +16,6 @@ displayAs: " Vulval lump, ulceration or bleeding"},
 
 {symptom: "vaginalMass",
 displayAs: "Vaginal Mass"},
-
-
-
-
-
 ]
 
-export default urogenital
+export default femaleGenital

@@ -11,6 +11,11 @@ import validateEndometrial from "./validateEndometrial";
 import validateCervical from "./validateCervical.js";
 import validateVulval from "./validateVulval.js";
 import validateVaginal from "./validateVaginal.js";
+import validateProstate from "./validateProstate.js";
+import validateBladder from "./validateBladder.js";
+import validateRenal from "./validateRenal";
+import validateTesticular from "./validateTesticular";
+import validatePenile from "./validatePenile";
 
 
 const validatorIndex=[
@@ -222,6 +227,62 @@ symptoms:[
     validator:validateVaginal,
     displayAs:"Vaginal Cancer",
     requirements:"",
+    },
+
+    {path:"prostate",
+    symptoms:[
+        "urinaryFrequency",
+        "urinaryRetention",
+        "haematuria",
+        "prProstate",
+        "erectileDysfunction",
+        "psa"
+        ],
+    validator:validateProstate,
+    displayAs:"Prostate Cancer",
+    requirements:""
+    },
+
+    {path:"bladder",
+    symptoms:[
+        "recUti",
+        "haematuria",
+        "microHaematuria"
+        ],
+    validator:validateBladder,
+    displayAs:"Bladder Cancer",
+    requirements:""
+    },
+
+    
+    {path:"renal",
+    symptoms:[
+        "haematuria"
+        ],
+    validator:validateRenal,
+    displayAs:"Renal Cancer",
+    requirements:""
+    },
+
+    {path:"testicular",
+    symptoms:[
+        "testisEnlargement",
+        "testisShape",
+        "testisOther"
+        ],
+    validator:validateTesticular,
+    displayAs:"Testicular Cancer",
+    requirements:""
+    },
+
+    {path:"penile",
+    symptoms:[
+        "penileMass",
+        "foreskin",
+        ],
+    validator:validatePenile,
+    displayAs:"Penile Cancer",
+    requirements:""
     }
 
 

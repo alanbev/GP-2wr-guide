@@ -20,7 +20,7 @@ displayAs:"Shortness of breath"
 },
 
 {symptom:"chestInfection",
-displayAs:"Persistent/ recurrent chestinfection"
+displayAs:"Persistent/ recurrent chest infection"
 },
 
 

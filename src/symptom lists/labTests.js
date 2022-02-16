@@ -1,3 +1,4 @@
+
 const labTests=
 [
     {symptom:"anaemia",
@@ -6,6 +7,10 @@ const labTests=
 
     {symptom:"idAnaemia",
     displayAs: "Iron Deficiency Anaemia(microcytosis or low ferritin",
+    },
+
+    {symptom: "wcc",
+    displayAs: "Elevated WCC"
     },
 
     {symptom:"thrombocytosis",
@@ -18,6 +23,9 @@ const labTests=
 
     {symptom:"ca125",
     displayAs:"Ca125 35 or more"},
+
+    {symptom: "psa",
+    displayAs: "PSA above ref for age"},
 
     {symptom:"fit",
     displayAs: "Positive FIT test",

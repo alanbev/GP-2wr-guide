@@ -10,10 +10,16 @@ if (formData.age<40)
      return formData   
     }
 if (formData.haemoptysis)
-{
+    {
     formData.twrValid.lung=true
     return formData
     }
+
+if (formData.cxrPleural)// patient has already had a CXR
+    {
+    return formData
+    }
+
 
 let cxrMessage="NICE guidelines  suggest Urgent (within 2 weeks) Chest X Ray"
 
