@@ -14,11 +14,13 @@ if (formData.dysphagia)
 if (formData.age>=55 && formData.weightLoss && (formData.upperAbdoPain || formData.reflux || formData.dyspepsia))
     {
     formData.message.oesophagus=urgentOGD
+    formData.investigations.push("Urgent Upper GI Endoscopy")
     return formData    
     }
 if (formData.haematemesis)
     {
     formData.message.oesophagus=routOGD
+    formData.investigations.push("Routine Upper GI Endoscopy")
     return formData      
     }
      
@@ -33,12 +35,14 @@ if ((formData.upperAbdoPain && (formData.anaemia || formData.idAnaemia)) ||
 ((formData.nausea || formData.vomiting) && (formData.weightLoss || formData.reflux || formData.dyspepsia || formData.upperAbdoPain)))
     {
     formData.message.oesophagus=routOGD
+    formData.investigations.push("Routine Upper GI Endoscopy")
     return formData
     }
     
 if (formData.dyspepsia)
     {
     formData.message.oesophagus=treatmentResistantDysepsia
+    formData.investigations.push("Routine Upper GI Endoscopy")
     return formData   
     }
 

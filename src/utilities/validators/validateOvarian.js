@@ -24,6 +24,7 @@ const ca125RaisedMessage= "If the CA 125 is 35 or more NICE recommend that an ul
     if (formData.ca125)
         {
         formData.message.ovarian = considerCa125Message
+        formData.investigations.push("Ca 125")
         return formData
         }
     
@@ -34,6 +35,7 @@ const ca125RaisedMessage= "If the CA 125 is 35 or more NICE recommend that an ul
     else if (formData.weightLoss || formData.fatigue || formData || formData.cobh)
         {
         formData.message.ovarian=considerCa125Message
+        formData.investigations.push("Ca 125")
         }
 
     if (formData.distension || formData.satiety || formData.appetiteLoss || formData.abdoPain || formData.pelvicPain || formData.urinaryFrequency)
@@ -41,6 +43,7 @@ const ca125RaisedMessage= "If the CA 125 is 35 or more NICE recommend that an ul
         if (formData.message.ovarian === "")
             {
             formData.message.ovarian=ovarianFreqSymptomsMessage
+            formData.investigations.push("Ca 125")
             }
         else // add message on if previous messsage exists
             {
@@ -58,6 +61,7 @@ const ca125RaisedMessage= "If the CA 125 is 35 or more NICE recommend that an ul
             {
             formData.message.ovarian += "\n"
             formData.message.ovarian += ca125RaisedMessage
+            formData.investigations.push("Ultrasound Abdomen", "Ultrasound) Pelvis")
             }
 
     return formData

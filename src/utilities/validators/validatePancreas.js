@@ -23,6 +23,7 @@ if (formData.weightLoss &&
      formData.diabetes)) 
         {
         formData.message.pancreas=pancreasMessage
+        formData.investigations.push("CT Abdomen")
         return formData
         }
 

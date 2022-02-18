@@ -17,6 +17,7 @@ if (formData.urinaryFrequency || formData.urinaryRetention || formData.haematuri
         else
             {
             formData.message.prostate = "NICE recommends consideration of a rectal examination and a PSA test." 
+            formData.investigations.push("PSA")
             }
 
          return formData

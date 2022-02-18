@@ -24,8 +24,10 @@ path:"colorectal",
 symptoms:[
     "weightLoss",
     "abdoPain",
+    "abdoMass",
     "rectalBleeding", 
     "anaemia", 
+    "rectalMass",
     "idAnaemia", 
     "cobh", 
     "fit"],
@@ -118,6 +120,7 @@ requirements:"",
 path:"stomach",
 symptoms:[
     "upperAbdoPain",
+    "upperAbdoMass",
     "weightLoss",
     "nausea",
     "anaemia",
@@ -163,6 +166,8 @@ requirements:"",
 {
 path:"ovarian",
 symptoms:[
+    "abdoMass",
+    "pelvicMass",
     "weightLoss",
     "fatigue",
     "appetiteLoss",
@@ -247,7 +252,8 @@ symptoms:[
     symptoms:[
         "recUti",
         "haematuria",
-        "microHaematuria"
+        "microHaematuria",
+        "wcc"
         ],
     validator:validateBladder,
     displayAs:"Bladder Cancer",

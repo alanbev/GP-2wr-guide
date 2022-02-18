@@ -23,9 +23,9 @@ const validateEndometrial=(formData)=>//check NG12 criteria
         }
 
     if (formData.vaginalDischarge)
-       {
+       {formData.investigations.push("Pelvic Ultrasound")
         if (formData.thrombocystosis || formData.haematuria)
-            {
+            { 
               formData.message.endometrial=pelvicUltrasound  
             }
         else

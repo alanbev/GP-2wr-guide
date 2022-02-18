@@ -5,6 +5,7 @@ const buildSymptomScores=(validatorIndex)=>
 {
 let symptomScore={}
 let pathwayCount={}
+const nonScoringSymptoms=["uti","sti"]//symptoms from form that do not add positie weight to a pathway.
     
     validatorIndex.forEach(element => {
         element.symptoms.forEach(symptom=>{
@@ -17,6 +18,12 @@ for (const[key,value] of Object.entries(pathwayCount))
 {
 symptomScore[key]=1/value
 }
+
+nonScoringSymptoms.forEach(symptom=>
+    {
+    symptomScore[symptom]=0
+    }
+)
 console.log("symptom score",symptomScore)
 return symptomScore
 }

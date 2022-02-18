@@ -36,7 +36,7 @@ displayAs:"Supraclavicular / cervical lymphadenopathy"
 displayAs:"Chest finding suggesting lung cancer"
 },
 
-{symptom:"ChestSignsPleural",
+{symptom:"chestSignsPleural",
 displayAs:"Chest signs suggesting pleural disease"
 }
 ]

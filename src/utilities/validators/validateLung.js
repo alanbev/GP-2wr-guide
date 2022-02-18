@@ -30,7 +30,8 @@ if (formData.chestInfection ||
     formData.thrombocytosis
     )
         {
-        formData.message.lung = cxrMessage 
+        formData.message.lung = cxrMessage
+        formData.investigations.push("Chest X Ray") 
         return formData
         }
 
@@ -47,7 +48,8 @@ formData.symptomList.forEach(symptom=>
 
 if (xrSymptomCount>=2 || (xrSymptomCount > 0 && formData.smoker))
     {
-        formData.message.lung = cxrMessage    
+        formData.message.lung = cxrMessage
+        formData.investigations.push("Chest X Ray")    
     }
 return formData
 }

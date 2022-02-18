@@ -16,7 +16,8 @@ formData.fingerClubbing||
 formData.chestSignsPleural
     )
         {
-        formData.message.mesothelioma = cxrMessage 
+        formData.message.mesothelioma = cxrMessage
+        formData.investigations.push("Chest X Ray") 
         return formData
         }
 
@@ -33,7 +34,8 @@ formData.symptomList.forEach(symptom=>
 
 if (xrSymptomCount>=2 || (xrSymptomCount > 0 && (formData.smoker || formData.asbestos)))
     {
-        formData.message.mesothelioma = cxrMessage    
+        formData.message.mesothelioma = cxrMessage
+        formData.investigations.push("Chest X Ray")    
     }
 return formData
 }

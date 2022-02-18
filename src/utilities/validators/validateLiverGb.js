@@ -5,6 +5,7 @@ const validateLiverGb=(formData)=>
     if (formData.LiverGbMass)
             {
             formData.message.liverGb=liverGbMessage
+            formData.investigations.push("Abdominal Ultrasound")
             return formData
             }
     

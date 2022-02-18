@@ -16,6 +16,20 @@ getAge(dob)//calculates age from date of birth- not used in current version sinc
     const age=(dateToday-dateOfBirth.getTime())/31557600000
     return age
 },
+getSymptomsForPath(path)//finds symptoms for each path -called from orderPathways function. 
+    {
+    let symptomsForThisPath=[]
+    validatorIndex.some(item=>
+        {
+        if (item.path===path)
+            {
+            symptomsForThisPath=item.symptoms
+            return true
+            }
+            return false
+        })
+    return symptomsForThisPath
+    },
 
 orderPathways(formData)
 {
@@ -23,32 +37,35 @@ orderPathways(formData)
     formData.scoredPathsToUse={};
     formData.pathsToUse.forEach(path=>
         {
-            formData.symptomList.forEach(symptom=>
+        let score=0
+    let pathSymptoms=this.getSymptomsForPath(path)
+
+       formData.symptomList.forEach(symptom =>
+        {
+            if (pathSymptoms.includes(symptom))
                 {
-                if (!formData.scoredPathsToUse.hasOwnProperty(path))
-                {formData.scoredPathsToUse[path]=symptomScores[symptom]}
-                else
-                {formData.scoredPathsToUse[path]+=symptomScores[symptom]}
-
-                 // boosts priority of path if two week rule valid    
-                if (formData.twrValid[path])
-                    {
-                    formData.scoredPathsToUse[path] += this.twrBoost
-                    }
-                    //drops priority of path if not for 2wr clinic and no 2wr message
-                else if(!formData.message[path])
-                    {
-                    formData.scoredPathsToUse[path] -= this.noMessageDrop
-                    }
-
-
-        })})
+                score += symptomScores[symptom]
+                }
+            }
+        )
+                // boosts priority of path if two week rule valid    
+            if (formData.twrValid[path])
+                {
+               score += this.twrBoost
+                }
+                //drops priority of path if not for 2wr clinic and no 2wr message
+            else if(formData.message[path]==="")
+                {
+               score-= this.noMessageDrop
+                }
+            formData.scoredPathsToUse[path]=score
+        })
             
-
-    
     var paths=Object.entries(formData.scoredPathsToUse)
-    paths.sort((a, b) => b[1] - a[1])
+    paths.sort((a, b) => b[1] - a[1])   
+     console.log("scoring and sorting", formData.scoredPathsToUse, paths )
     return paths
+
 },
 
 ValidateTwr(formData)// root method for validation- sends formdata to 
@@ -68,15 +85,17 @@ ValidateTwr(formData)// root method for validation- sends formdata to
 findValidators(formData)
     {
     formData.pathsToUse=[]
-    formData.symptomList.forEach(symptom=>{
-    validatorIndex.forEach(pathway=>{
-    if (pathway.symptoms.includes (symptom))
+     validatorIndex.forEach(pathway=>{
+    formData.symptomList.some(symptom=>{
+    if (pathway["symptoms"].includes (symptom))
         {
         this.validators.push(pathway.validator)
         formData.pathsToUse.push(pathway.path)
         formData.twrValid[pathway.path]=false
         formData.message[pathway.path]=""
+        return true
         }
+        return false
 }
 )})},
 }
