@@ -5,7 +5,7 @@ const ovarianIBSSymptomsMessage = "It is rare for IBS symptoms to present for th
 
 const considerCa125Message = "NICE recommends consideration of carrying out a CA 125 blood test in women with unexplained weight loss, fatigue or a change in bowel habit"
 
-const ovarianFreqSymptomsMessage = "If symptoms of distenison, early satiety, pelvic or abdominal pain or urinary frequency are frequent or persistent (particularly if more than twelve times per month and espcially in women over 50) NICE recommends a CA 125 blood test." 
+const ovarianFreqSymptomsMessage = "If symptoms of distension, early satiety, pelvic or abdominal pain or urinary frequency are frequent or persistent (particularly if more than twelve times per month and espcially in women over 50) NICE recommends a CA 125 blood test." 
 
 const ovarianReturn= "Assess carefully & consider other causes of symptoms. If no other cause apparent advise return for review if these become more freqenunt or persistent"
 
@@ -61,7 +61,7 @@ const ca125RaisedMessage= "If the CA 125 is 35 or more NICE recommend that an ul
             {
             formData.message.ovarian += "\n"
             formData.message.ovarian += ca125RaisedMessage
-            formData.investigations.push("Ultrasound Abdomen", "Ultrasound) Pelvis")
+            formData.investigations.push("Ultrasound Abdomen", "Ultrasound Pelvis")
             }
 
     return formData

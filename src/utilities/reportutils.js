@@ -2,6 +2,7 @@
 import buildSymptomScores from './buildSymptomScores.js'
 import validatorIndex from './validators/validatorIndex.js'
 
+
 const reportUtils={
 
 validators:[],// list of validators to use]
@@ -63,12 +64,12 @@ orderPathways(formData)
             
     var paths=Object.entries(formData.scoredPathsToUse)
     paths.sort((a, b) => b[1] - a[1])   
-     console.log("scoring and sorting", formData.scoredPathsToUse, paths )
     return paths
-
 },
 
-ValidateTwr(formData)// root method for validation- sends formdata to 
+
+
+ValidateTwr(formData)// root method for validation- 
 {
     //formData.age=this.getAge(formData.dob);  //taken out of use when incput conveted to age 
     formData.age=parseInt(formData.age)
@@ -82,8 +83,11 @@ ValidateTwr(formData)// root method for validation- sends formdata to
     formData.sortedPaths=paths
     return formData
 },
+
+
 findValidators(formData)
     {
+    this.validators=[]
     formData.pathsToUse=[]
      validatorIndex.forEach(pathway=>{
     formData.symptomList.some(symptom=>{
@@ -94,6 +98,7 @@ findValidators(formData)
         formData.twrValid[pathway.path]=false
         formData.message[pathway.path]=""
         return true
+        
         }
         return false
 }

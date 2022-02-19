@@ -7,8 +7,6 @@ import InputItem from '../components/inputItem.js';
 import SymptomBlock from '../components/symptomBlocks.js';
 import formUtils from'../utilities/formutils.js';
 import symptomsIndex from '../symptom lists/symptomsIndex.js';
-import buildSymptomScores from '../utilities/buildSymptomScores';
-import validatorIndex from '../utilities/validators/validatorIndex';
 
 function SymptomForm(props) {
 const navigate = useNavigate();
@@ -35,7 +33,7 @@ const onSubmit= (values)=>{
   props.setFormData(values)
   navigate ('./Report')
 }
-buildSymptomScores(validatorIndex)
+
   return (
   <main>
     <h1>Two Week Rule Referal Helper</h1>
