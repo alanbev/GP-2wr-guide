@@ -1,5 +1,5 @@
 import React from 'react';
-import {Field, validateYupSchema} from 'formik';
+import {Field } from 'formik';
 import "../css/report.css"
 
 function InvestigationInputItem(props) {

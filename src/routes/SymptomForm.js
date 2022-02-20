@@ -37,6 +37,7 @@ const onSubmit= (values)=>{
   return (
   <main>
     <h1>Two Week Rule Referal Helper</h1>
+    <h3>Development version - not for clinical use.</h3>
    <Formik
    initialValues={initialValues}
    onSubmit={onSubmit}

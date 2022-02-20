@@ -1,13 +1,14 @@
 const validateOesophagus=(formData)=>
 {const urgentOGD="Nice guidelines suggest referal for urgent (within two weeks) direct access Upper GI endoscopy"
 
-const routOGD="Nice guidelines suggest referal for non-urgent  direct access Upper GI endoscopy"
+const routOGD="Nice guidelines suggest referal for non-urgent direct access Upper GI endoscopy"
 
-const treatmentResistantDysepsia= "Nice guidelines suggest referal for non-urgent  direct access Upper GI endoscopy if the patient's dyspepsia is resistant to treatment"
+const treatmentResistantDysepsia= "Nice guidelines suggest referal for non-urgent direct access Upper GI endoscopy if the patient's dyspepsia is resistant to treatment"
 
 if (formData.dysphagia)
     {
      formData.message.oesophagus=urgentOGD
+     formData.investigations.push("Urgent Upper GI Endoscopy")
      return formData   
     }
 

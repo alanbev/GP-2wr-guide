@@ -23,4 +23,8 @@
 #investigationsBlock{
     background-color: palevioletred;
 }
+#hidden{
+display: none;
+}
+
 

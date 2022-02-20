@@ -15,7 +15,7 @@ else if( (formData.cobh || formData.idAnaemia)//check DG30 criteria for recommen
 ||(formData.age>=50 && (formData.abdoPain || formData.weightLoss)) 
 ||(formData.age>=60 && formData.anaemia) )
     {
-     formData.message.colorectal= "The patient does not meet the NICE criteria for Two week rule colorectal referal but on basis of their symtoms, FIT testing is recommended with consideration of a colorectal 2wr referal if FIT +ve"
+     formData.message.colorectal= "The patient does not meet the NICE criteria for Two week rule colorectal referal but on the basis of their symtoms, FIT testing is recommended with consideration of a colorectal 2wr referal if FIT +ve"
 
     formData.investigations.push("FIT test")
     }

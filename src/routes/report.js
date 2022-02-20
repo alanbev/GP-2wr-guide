@@ -18,6 +18,7 @@ function Report(props)
    return(
    <main>
    <h1>Referal Options</h1>
+
    <div>
      {pathBlocks}
    </div>

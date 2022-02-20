@@ -21,7 +21,7 @@ if (formData.cxrPleural)// patient has already had a CXR
     }
 
 
-let cxrMessage="NICE guidelines  suggest Urgent (within 2 weeks) Chest X Ray"
+let cxrMessage="NICE guidelines suggest Urgent (within 2 weeks) Chest X Ray"
 
 if (formData.chestInfection || 
     formData.fingerClubbing||
