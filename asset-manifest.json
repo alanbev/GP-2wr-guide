@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/GP-2wr-guide/static/css/main.ca19c44b.css",
-    "main.js": "/GP-2wr-guide/static/js/main.cccdd712.js",
+    "main.js": "/GP-2wr-guide/static/js/main.951cddfc.js",
     "static/js/787.b96510c9.chunk.js": "/GP-2wr-guide/static/js/787.b96510c9.chunk.js",
     "index.html": "/GP-2wr-guide/index.html",
     "main.ca19c44b.css.map": "/GP-2wr-guide/static/css/main.ca19c44b.css.map",
-    "main.cccdd712.js.map": "/GP-2wr-guide/static/js/main.cccdd712.js.map",
+    "main.951cddfc.js.map": "/GP-2wr-guide/static/js/main.951cddfc.js.map",
     "787.b96510c9.chunk.js.map": "/GP-2wr-guide/static/js/787.b96510c9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ca19c44b.css",
-    "static/js/main.cccdd712.js"
+    "static/js/main.951cddfc.js"
   ]
 }
