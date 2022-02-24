@@ -9,7 +9,7 @@ displayAs:"Post menopausal bleeding"
 },
 
 {symptom:"abnCervix",
-displayAs: "Cervix consistent with cancer"},
+displayAs: "Cervix exam consistent with cancer"},
 
 {symptom: "vulvalLump",
 displayAs: " Vulval lump, ulceration or bleeding"},

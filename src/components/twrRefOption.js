@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 function TwrRefOptions(props) {
 
   const navigate=useNavigate()
-  const clickFunction=()=>{navigate(`../GP-2wr-aid/${props.pathway}`)}
+  const clickFunction=()=>{navigate(`../${props.pathway}`)}
 
 
 return (  

@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import SymptomForm from './routes/SymptomForm.js';
-import {BrowserRouter, HashRouter, Route, Routes} from 'react-router-dom'
+import { HashRouter, Route, Routes} from 'react-router-dom'
 import Report from './routes/report.js';
 import ColorectalForm from './routes/colorectalForm.js'
 import NonTwrForm from './routes/nonTWRref'

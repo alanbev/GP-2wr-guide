@@ -1,6 +1,6 @@
 import React from "react";
-import { useState , useEffect } from "react/cjs/react.development";
-import validatorIndex from "../utilities/validators/validatorIndex";
+import { useState , useEffect } from "react";
+import validatorIndex from "../utilities/validators/validatorIndex.js";
 import RequirementsComponent from "./requirementsComponent";
 import TwrRefOptions from "./twrRefOption";
 
