@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom'
 import {Formik, Form, Field, ErrorMessage} from 'formik';
 import * as Yup from 'yup'
@@ -7,10 +7,11 @@ import InputItem from '../components/inputItem.js';
 import SymptomBlock from '../components/symptomBlocks.js';
 import formUtils from'../utilities/formutils.js';
 import symptomsIndex from '../symptom lists/symptomsIndex.js';
+import DisplaySwitch from '../components/displaySwitch';
 
 function SymptomForm(props) {
 const navigate = useNavigate();
-
+const [accordian, setAccordian] = useState(true)
 let typesOfSymptoms=[]
 symptomsIndex.forEach((listOfSymptoms)=>{
 const eachList=listOfSymptoms[0].map((symptom,key)=>
@@ -20,7 +21,7 @@ const eachList=listOfSymptoms[0].map((symptom,key)=>
   />)
 typesOfSymptoms.push([listOfSymptoms[1],eachList])})
 
-const allSymptoms=typesOfSymptoms.map((eachTypeOfSymptom, key)=><SymptomBlock eachTypeOfSymptom={eachTypeOfSymptom} key={key}/>)
+const allSymptoms=typesOfSymptoms.map((eachTypeOfSymptom, key)=><SymptomBlock eachTypeOfSymptom={eachTypeOfSymptom} key={key} accordian={accordian}/>)
 
 const initialValues=formUtils.initialValuesObjectBuilder(symptomsIndex)
 
@@ -38,6 +39,7 @@ const onSubmit= (values)=>{
   <main>
     <h1>Two Week Rule Referal Helper</h1>
     <h3>Development version - not for clinical use.</h3>
+    <DisplaySwitch accordian={accordian} setAccordian={setAccordian} />
    <Formik
    initialValues={initialValues}
    onSubmit={onSubmit}

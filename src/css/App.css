@@ -21,6 +21,7 @@ flex-wrap: wrap;
   background-color: antiquewhite;
   border:black solid ;
   margin: 20px;
+  align-self: flex-start;
   }
 #twroptions{
   display: inline

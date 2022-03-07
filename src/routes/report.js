@@ -1,14 +1,17 @@
 import '../css/App.css';
-import React from 'react';
+import React, {useState} from 'react';
 import reportUtils from '../utilities/reportutils.js'
 import PathDisplayBlock from '../components/pathsdisplayblocks.js';
 import Investigations from '../components/investigations';
 
 
 
+
 function Report(props)
 {
-   const formData=props.formData
+
+ 
+  const formData=props.formData
    
   let modifiedFormData=reportUtils.ValidateTwr(formData)
   let pathBlocks=modifiedFormData.sortedPaths.map((eachPath,index)=><PathDisplayBlock eachPath={eachPath} modifiedFormData={modifiedFormData} key={index}/>)
@@ -20,6 +23,7 @@ function Report(props)
    <h1>Referal Options</h1>
 
    <div>
+  
      {pathBlocks}
    </div>
    <div>
