@@ -25,12 +25,10 @@ function TwrPathRequirement(props)
                 if (validator.path===props.pathway)
                 {
                 setRequirements(validator.requirements)
-                console.log("requirements",requirements)
                 }
             })}
 
             findRequirements()
-            console.log("useseffect has run")
             if (requirements==="")
                 {setRequirementsMet(true)}
             else

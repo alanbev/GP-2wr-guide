@@ -1,14 +1,14 @@
 //imports for the validators to be used- these also need to be added to the validators list below
 import buildSymptomScores from './buildSymptomScores.js'
 import validatorIndex from './validators/validatorIndex.js'
+import sexExclude from './validators/sexExclude.js'
 
-
-const reportUtils={
-
+const reportUtils=
+{
 validators:[],// list of validators to use]
 twrBoost:30,  //amount to elevate path qualifying for 2wr clinic in display
-noMessageDrop:30 //amount to downgrade paths with no 2wr message in display
-,
+noMessageDrop:30, //amount to downgrade paths with no 2wr message in display
+
 
 getAge(dob)//calculates age from date of birth- not used in current version since form changed to use age
 {
@@ -67,8 +67,6 @@ orderPathways(formData)
     return paths
 },
 
-
-
 ValidateTwr(formData)// root method for validation- 
 {
     //formData.age=this.getAge(formData.dob);  //taken out of use when incput conveted to age 
@@ -84,25 +82,26 @@ ValidateTwr(formData)// root method for validation-
     return formData
 },
 
-
 findValidators(formData)
     {
     this.validators=[]
     formData.pathsToUse=[]
      validatorIndex.forEach(pathway=>{
+         if (!sexExclude[formData.sex].includes(pathway.path))
+         {
     formData.symptomList.some(symptom=>{
-    if (pathway["symptoms"].includes (symptom))
+    if( pathway["symptoms"].includes(symptom))
         {
         this.validators.push(pathway.validator)
         formData.pathsToUse.push(pathway.path)
         formData.twrValid[pathway.path]=false
         formData.message[pathway.path]=""
         return true
-        
         }
         return false
-}
-)})},
+    }
+    )}})
+        }
 }
 
 

@@ -4,6 +4,9 @@ main{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#age{
+  border-right: 50;
+}
 
 #allSymptomsHolder{
 display: flex;

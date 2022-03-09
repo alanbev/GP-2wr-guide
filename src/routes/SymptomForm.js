@@ -8,10 +8,13 @@ import SymptomBlock from '../components/symptomBlocks.js';
 import formUtils from'../utilities/formutils.js';
 import symptomsIndex from '../symptom lists/symptomsIndex.js';
 import DisplaySwitch from '../components/displaySwitch';
+import ChooseSex from '../components/chooseSex';
 
 function SymptomForm(props) {
 const navigate = useNavigate();
 const [accordian, setAccordian] = useState(true)
+const [sex, setSex]=useState("male")
+
 let typesOfSymptoms=[]
 symptomsIndex.forEach((listOfSymptoms)=>{
 const eachList=listOfSymptoms[0].map((symptom,key)=>
@@ -21,7 +24,7 @@ const eachList=listOfSymptoms[0].map((symptom,key)=>
   />)
 typesOfSymptoms.push([listOfSymptoms[1],eachList])})
 
-const allSymptoms=typesOfSymptoms.map((eachTypeOfSymptom, key)=><SymptomBlock eachTypeOfSymptom={eachTypeOfSymptom} key={key} accordian={accordian}/>)
+const allSymptoms=typesOfSymptoms.map((eachTypeOfSymptom, key)=><SymptomBlock eachTypeOfSymptom={eachTypeOfSymptom} sex={sex} key={key} accordian={accordian}/>)
 
 const initialValues=formUtils.initialValuesObjectBuilder(symptomsIndex)
 
@@ -31,7 +34,9 @@ age:Yup.number().required("Please enter the Patient's age"),
 
 const onSubmit= (values)=>{
   values=formUtils.buildSymptomList(values)
+  values.sex=sex
   props.setFormData(values)
+  
   navigate ('./Report')
 }
 
@@ -51,8 +56,9 @@ const onSubmit= (values)=>{
   <ErrorMessage name="age" >
   {errorMsg=><div className="error">{errorMsg}</div>}
   </ErrorMessage>
+  <ChooseSex sex={sex} setSex={setSex}/>
   <div id="allSymptomsHolder">{allSymptoms}</div>
-  <input type="submit"/>
+  <input type="submit" value="Show NICE Recommendations"/>
     </Form>
     </Formik>
   </main >

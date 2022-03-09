@@ -1,5 +1,3 @@
-
-
 const formUtils={
 
 initialValuesObjectBuilder(objectList)
@@ -11,6 +9,7 @@ initialValuesObjectBuilder(objectList)
     let newObject=
     {
     age:"",
+    sex:""
     }
 
 //adds enties to initialValues from the symotom lists
@@ -23,24 +22,20 @@ initialValuesObjectBuilder(objectList)
             newObject[eachKey]=false
             }
         }
-
     return newObject
     },
 
-
-    buildSymptomList(values)
-    {
-        let symptomList=[]
-    for (let key in values)
- 
-        { 
-        if (values[key])
-        symptomList.push(key)
-        }
-        symptomList.splice(0,1)//removes age
-        values.symptomList=symptomList
-        console.log("values", values)
-         return values
+buildSymptomList(values)
+{
+    let symptomList=[]
+for (let key in values)
+    { 
+    if (values[key])
+    symptomList.push(key)
+    }
+    symptomList.splice(0,1)//removes age
+    values.symptomList=symptomList
+        return values
 },
 }
 

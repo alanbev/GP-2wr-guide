@@ -1,16 +1,11 @@
 import '../css/App.css';
-import React, {useState} from 'react';
+import React from 'react';
 import reportUtils from '../utilities/reportutils.js'
 import PathDisplayBlock from '../components/pathsdisplayblocks.js';
 import Investigations from '../components/investigations';
 
-
-
-
 function Report(props)
 {
-
- 
   const formData=props.formData
    
   let modifiedFormData=reportUtils.ValidateTwr(formData)
@@ -21,9 +16,7 @@ function Report(props)
    return(
    <main>
    <h1>Referal Options</h1>
-
    <div>
-  
      {pathBlocks}
    </div>
    <div>

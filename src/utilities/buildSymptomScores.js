@@ -24,7 +24,7 @@ nonScoringSymptoms.forEach(symptom=>
     symptomScore[symptom]=0
     }
 )
-console.log("symptom score",symptomScore)
+
 return symptomScore
 }
 
