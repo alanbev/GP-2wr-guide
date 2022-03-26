@@ -16,6 +16,9 @@ import validateBladder from "./validateBladder.js";
 import validateRenal from "./validateRenal";
 import validateTesticular from "./validateTesticular";
 import validatePenile from "./validatePenile";
+import validateMelanoma from "./validateMelanoma";
+import validateSquamous from "./valiateSquamous";
+import validateBasal from "./validateBasal";
 
 
 const validatorIndex=[
@@ -289,7 +292,56 @@ symptoms:[
     validator:validatePenile,
     displayAs:"Penile Cancer",
     requirements:""
+    },
+
+{path:"testicular",
+    symptoms:[
+        "testisEnlargement",
+        "testisShape",
+        "testisOther"
+        ],
+    validator:validateTesticular,
+    displayAs:"Testicular Cancer",
+    requirements:""
+    },
+
+    {path:"penile",
+    symptoms:[
+        "penileMass",
+        "foreskin",
+        ],
+    validator:validatePenile,
+    displayAs:"Penile Cancer",
+    requirements:""
+    },
+
+    //skin pathways
+
+    {path:"melanoma",
+    symptoms:["pigmentedLesion",
+            "dermoscopyMelanoma",
+            "nodularMelanoma",
+            ],
+    validator:validateMelanoma,
+    displayAs:"Melanoma",
+    requirements:""
+    },
+
+    
+    {path:"squamous",
+    symptoms:["squamous"],
+    validator:validateSquamous,
+    displayAs:"Melanoma",
+    requirements:""
+    },
+
+    {path:"basal",
+    symptoms:["basal", "basalConcerning"],
+    validator:validateBasal,
+    displayAs:"Basal Cell Carcinoma",
+    requirements:""
     }
+
 
 
 ]

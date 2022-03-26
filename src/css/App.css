@@ -4,14 +4,19 @@ main{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#age{
-  border-right: 50;
+#ageHolder{
+padding-right: 50px;
+}
+
+#displaySwitch{
+float :right ;
+max-width: 15%;
 }
 
 #allSymptomsHolder{
 display: flex;
 flex-wrap: wrap;
-  }
+}
 
 .blocktitle{
   font-family: Arial, Helvetica, sans-serif;
@@ -34,5 +39,16 @@ flex-wrap: wrap;
 #displayNTWR{
 display:block;
 margin-top:20px
+}
 
+.popup {
+border:solid rgb(231, 96, 96);
+background-color: rgb(243, 137, 137);
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.popupMessage{
+  font-size: large;
+  font-weight: bolder;
+  color: rgb(3, 3, 97);
 }

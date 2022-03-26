@@ -6,7 +6,7 @@ function InputItem(props) {
     return (
          <p>  
         <label htmlFor ={props.symptom.symptom}>{props.symptom.displayAs}</label>
-        <Field type="checkbox" id={props.symptom.symptom} name={props.symptom.symptom}/>
+        <Field type="checkbox" id={props.symptom.symptom} name={props.symptom.symptom} onClick={props.handleChange} />
          </p>   
     );
 }

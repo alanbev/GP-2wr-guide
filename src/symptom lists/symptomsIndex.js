@@ -11,6 +11,7 @@ import femaleGenital from './femalegenital.js';
 import maleGenital from './malegenital.js';
 import labTests from './labTests.js';
 import imaging from './imaging.js';
+import skin from './skin.js'
 
 
 //array of symptoms lists to be displayed in the form -once added here they will display with not further edits needed format is [name of symptoms list, Tile to display at top of symptoms block]
@@ -26,6 +27,7 @@ const symptomsIndex=
 [femaleGenital, "Female Genital Symptoms"],
 [respiratorySymptoms, "Respiratory Symptoms"],
 [breastSymptoms,"Breast"],
+[skin, "Skin"],
 [labTests, "Lab Tests"],
 [imaging, "Imaging"]
 ]
