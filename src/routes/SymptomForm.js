@@ -30,7 +30,7 @@ const handleChange=(e)=>
         if (formValues.current.values.pigmentedLesion===false)
         {   
         setMelanomaCriteria(showMelanomaCriteria? false : true)
-              } 
+        } 
       }
       
       if (e.currentTarget.id==="idAnaemia")
@@ -53,8 +53,6 @@ const handleChange=(e)=>
     formValues.current.values.pigmentedLesion=criteriMet
     setMelanomaCriteria(false)
     }
-
-
 
 let typesOfSymptoms=[]
 symptomsIndex.forEach((listOfSymptoms)=>{

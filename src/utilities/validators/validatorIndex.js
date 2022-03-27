@@ -19,7 +19,10 @@ import validatePenile from "./validatePenile";
 import validateMelanoma from "./validateMelanoma";
 import validateSquamous from "./valiateSquamous";
 import validateBasal from "./validateBasal";
-
+import validatelaryngeal from "./validateLaryngeal";
+import validateOral from "./validateOral"; 
+import validateThyroid from "./validateThyroid";
+import validateCns from "./ValidateCns";
 
 const validatorIndex=[
 {
@@ -340,7 +343,37 @@ symptoms:[
     validator:validateBasal,
     displayAs:"Basal Cell Carcinoma",
     requirements:""
-    }
+    },
+
+    // head, neck,CNS
+
+    {path:"laryngeal",
+    symptoms:["hoarse", "neckLump"],
+    validator:validatelaryngeal,
+    displayAs:"Laryngeal cancer",
+    requirements:""
+    },
+
+    {path:"oral",
+    symptoms:["neckLump", "oralUlcer", "oralLump","oralRedPatch"], 
+    validator:validateOral,
+    displayAs:"Oral cancer",
+    requirements:""
+    },
+
+    {path:"thyroid",
+    symptoms:["thyroid"], 
+    validator:validateThyroid,
+    displayAs:"Thyroid cancer",
+    requirements:""
+    },
+
+    {path:"cns",
+    symptoms:["cns"], 
+    validator:validateCns,
+    displayAs:"Brain / CNS Cancer",
+    requirements:""
+    },
 
 
 
