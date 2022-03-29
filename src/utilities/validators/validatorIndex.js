@@ -27,6 +27,8 @@ import validateLeukaemia from "./validateLeukaemia,";
 import validateMyeloma from "./validateMyeloma";
 import validateNonHodgekins from "./validateNonHodgkins";
 import validateHodgekins from "./validateHodgkins";
+import validateBoneSarcoma from "./validateBoneSarcoma";
+import validateSoftTissueSarcoma from "./valiateSoftTissueSarcoma";
 
 const validatorIndex=[
 {
@@ -434,7 +436,27 @@ symptoms:[
     "alcLnPain"],
     validator:validateHodgekins,
     displayAs: "Hodgkin's Lymphoma",
+    requirements:""},
+
+    //sarcoma validators
+
+    {path: "boneSarcoma",
+    symptoms: ["xrBoneSarcoma",
+    "bonePain",
+    "bonelump",],
+    validator:validateBoneSarcoma,
+    displayAs: "Bone Sarcoma",
+    requirements:""},
+
+    {path: "softTissueSarcoma",
+    symptoms: ["usSarcoma",
+    "stLump"],
+    validator:validateSoftTissueSarcoma,
+    displayAs: "Soft Tissue Sarcoma",
     requirements:""}
+
+
+
 
 
 

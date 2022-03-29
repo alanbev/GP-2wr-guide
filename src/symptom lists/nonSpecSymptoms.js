@@ -34,8 +34,6 @@ const nonSpecSymptomsList=
     {symptom:"diabetes",
     displayAs: "New-onset Diabetes"},
 
-    {symptom: "fracture",
-    displayAs: "Unexplained fracture"}
 ]
 
 

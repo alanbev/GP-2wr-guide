@@ -8,12 +8,17 @@ const imaging =
     displayAs:"Chest XR suggesting pleural disease"
     },
 
-
     {symptom:"imagingOvarian",
     displayAs: "Ultrasound / CT suspicious of ovarian cancer"},
 
     {symptom:"imagingEndometrial",
-    displayAs: "Ultrasound / CT suspicious of endometrial cancer"}
+    displayAs: "Ultrasound / CT suspicious of endometrial cancer"},
+
+    {symptom:"xrBoneSarcoma",
+    displayAs:"X Ray suggesting bone sarcoma"},
+
+    {symptom: "usSarcoma",
+    displayAs: "Ultrasound suggesting / inconclusive for sarcoma"}
 
 
 
