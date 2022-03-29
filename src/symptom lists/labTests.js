@@ -1,4 +1,3 @@
-
 const labTests=
 [
     {symptom:"anaemia",
@@ -13,12 +12,32 @@ const labTests=
     displayAs: "Elevated WCC"
     },
 
+    {symptom: "leukopenia",
+    displayAs: "Leukopenia"
+    },
+
     {symptom:"thrombocytosis",
     displayAs:"Thrombocytosis"
     },
 
+    {symptom:"esr",
+    displayAs:"Raised ESR or plasma viscosity"
+    },  
+    
+    {symptom: "hypercalcaemia",
+    displayAs: "Hypercacaemia"
+    }, 
+    
     {symptom:"elevatedGlucose",
     displayAs:"High blood glucose"
+    },
+
+    {symptom: "electrophoresis",
+    displayAs: "Plasma electrophoresis suggests myeloma"
+    },
+
+    {symptom: "bence",
+    displayAs: "Bence–Jones protein urine test suggest myeloma"
     },
 
     {symptom:"ca125",

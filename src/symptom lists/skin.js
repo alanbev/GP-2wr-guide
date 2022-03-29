@@ -21,8 +21,21 @@ displayAs:"Appearance suspicious of squamous cell carcinoma"
 displayAs:"Appearances suspicous of basal cell carcinoma"
 },
 
-{symptom:"basalConcerning",
+{symptom: "basalConcerning",
 displayAs:"BCC with concerning site or size"
+},
+
+{
+symptom:"bruising",
+displayAs:"Unexplained bruising"
+},
+
+{symptom:"petechiae",
+displayAs: "Unexplained petechiae"
+},
+
+{symptom:"pruritis",
+displayAs:"Pruritis"
 },
 
 

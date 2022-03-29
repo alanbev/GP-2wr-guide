@@ -11,14 +11,21 @@ displayAs:"Upper Abdominal Pain"
 {symptom:"abdoPain",
 displayAs:"Abdominal Pain"
 },
+
 {symptom:"pelvicPain",
 displayAs:"Pelvic Pain"
 },
 
-
 {
 symptom:"backPain",
 displayAs:"Back Pain"
+},
+
+{symptom: "bonePain",
+displayAs: "Persistent / unexplained bone pain"
+},
+{symptom:"alcLnPain",
+displayAs:"Alcohol-induced lymph node pain"
 }
 
 ]

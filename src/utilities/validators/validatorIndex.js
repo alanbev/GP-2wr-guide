@@ -23,6 +23,10 @@ import validatelaryngeal from "./validateLaryngeal";
 import validateOral from "./validateOral"; 
 import validateThyroid from "./validateThyroid";
 import validateCns from "./ValidateCns";
+import validateLeukaemia from "./validateLeukaemia,";
+import validateMyeloma from "./validateMyeloma";
+import validateNonHodgekins from "./validateNonHodgkins";
+import validateHodgekins from "./validateHodgkins";
 
 const validatorIndex=[
 {
@@ -374,6 +378,69 @@ symptoms:[
     displayAs:"Brain / CNS Cancer",
     requirements:""
     },
+
+// haematological cancers
+    {path: "leukaemia",
+    symptoms: ["pallor",
+    "fatigue",
+    "fever",
+    "infection",
+   "lymphadenopathy",
+    "bruising",
+    "bleeding",
+    "petechiae",
+    "hepatosplenomegaly",
+    "bonePain"],
+    validator:validateLeukaemia,
+    displayAs: "Leukaemia",
+    requirements:""},
+    
+
+    {path: "myeloma",
+    symptoms: ["esr",
+    "hypercalcaemia",
+    "bence",
+    "electophoresis",
+    "leukopenia",
+    "fracture",
+    "backPain",
+    "bonePain"],
+    validator:validateMyeloma,
+    displayAs: "Myeloma",
+    requirements:""},
+
+
+    {path: "nonHodgkins",
+    symptoms: ["lymphadenopathy",
+    "hepatosplenomegaly",
+    "splenomegaly",
+    "fever",
+    "nightSweats",
+    "sob",
+    "pruritis",
+    "weightLoss"],
+    validator:validateNonHodgekins,
+    displayAs: "Non-Hodgkin's Lymphoma",
+    requirements:""},
+
+
+    {path: "hodgkins",
+    symptoms: ["lymphadenopathy",
+    "fever",
+    "nightSweats",
+    "sob",
+    "pruritis",
+    "weightLoss",
+    "alcLnPain"],
+    validator:validateHodgekins,
+    displayAs: "Hodgkin's Lymphoma",
+    requirements:""}
+
+
+
+
+
+
 
 
 

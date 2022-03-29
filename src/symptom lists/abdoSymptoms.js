@@ -8,6 +8,13 @@ displayAs:"Persistent abdominal distension / bloating"
 displayAs:"Epigastric Mass"
 },
 
+{symptom: "hepatosplenomegaly",
+displayAs: "Hepatosplenomegaly"
+},
+
+{symptom: "splenomegaly",
+displayAs: "Splenomegaly"},
+
 {symptom:"LiverGbMass",
 displayAs:"Liver or Gallbladdder Mass"
 },

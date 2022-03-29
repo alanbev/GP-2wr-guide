@@ -9,25 +9,33 @@ const nonSpecSymptomsList=
     {symptom:"fatigue",
     displayAs:"Fatigue"},
 
-    {symptom:"appetiteLoss",
-    displayAs:"Appetite Loss"},
+    {symptom:"pallor",
+    displayAs:"Pallor"},
 
-    
-    {symptom:"earlySatiety",
-    displayAs:"Early Satiety / feeling full"
-    },
+    {symptom:"fever",
+    displayAs:"Unexplained fever"},
 
-    {symptom:"nausea",
-    displayAs:"Nausea"},
+    {symptom:"infection",
+    displayAs:"Persistent / recurrent infecton"},
 
+    {symptom: "lymphadenopathy",
+    displayAs: "Generalised lymphadenopathy"},
 
+    {symptom: "bleeding",
+    displayAs: "Unexplained bleeding"},
 
     {symptom:"jaundice",
     displayAs:"Jaundice"
     },
 
+    {symptom:"nightSweats",
+    displayAs:"Night sweats"},
+
     {symptom:"diabetes",
-    displayAs: "New Onset Diabetes"}
+    displayAs: "New-onset Diabetes"},
+
+    {symptom: "fracture",
+    displayAs: "Unexplained fracture"}
 ]
 
 
