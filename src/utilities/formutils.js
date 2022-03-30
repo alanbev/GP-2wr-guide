@@ -23,7 +23,6 @@ initialValuesObjectBuilder(objectList,calledFrom)
     else
         {
         keylist = objectList.map(item=>{return item.symptom})
-        console.log(objectList,keylist)
         }//simpler versio  to deal with cases where single array of object
 
     for (const eachKey of keylist)

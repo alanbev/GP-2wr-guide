@@ -4,7 +4,6 @@ import "../css/report.css"
 
 function InvestigationInputItem(props) {
     let investigationId= props.investigation.replace(/\s/g,"")
-    console.log(investigationId)
   
     return (
          <p className='investigation'>  

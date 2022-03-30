@@ -29,6 +29,10 @@ import validateNonHodgekins from "./validateNonHodgkins";
 import validateHodgekins from "./validateHodgkins";
 import validateBoneSarcoma from "./validateBoneSarcoma";
 import validateSoftTissueSarcoma from "./valiateSoftTissueSarcoma";
+import validateNeuroblastoma from "./validateNeuroblastoma";
+import validateRetinoblastoma from "./validateRetinoblastoma";
+import validateWilms from "./validateWilms";
+import validateNonSpecific from "./validateNonSpecific";
 
 const validatorIndex=[
 {
@@ -453,20 +457,58 @@ symptoms:[
     "stLump"],
     validator:validateSoftTissueSarcoma,
     displayAs: "Soft Tissue Sarcoma",
-    requirements:""}
+    requirements:""},
 
 
+    //childhood tumours
+
+    {path: "neuroblastoma",
+    symptoms: ["upperAbdoMass",
+        "hepatosplenomegaly",
+        "splenomegaly",
+        "LiverGbMass",
+        "abdoMass",
+        "pelvicMass"],
+    validator:validateNeuroblastoma,
+    displayAs: "Neuroblastoma",
+    requirements:""},
 
 
+    {path: "retinoblastoma",
+    symptoms: ["squint", "lossRedReflex"],
+    validator:validateRetinoblastoma,
+    displayAs: "Retinoblastoma",
+    requirements:""},
+
+    {path: "wilms",
+    symptoms: ["upperAbdoMass",
+                "hepatosplenomegaly",
+                "splenomegaly",
+                "LiverGbMass",
+                "abdoMass",
+                "pelvicMass",
+                "haematuria"],
+    validator:validateWilms,
+    displayAs: "Wilm's Tumour",
+    requirements:""},
 
 
+    //non specific
 
-
-
-
-
+    {path: "nonSpecific",
+    symptoms: ["weightLoss", 
+    "fatigue",
+    "malaise",
+    "distension", 
+    "dvt", 
+    "childConcern",
+    "appetiteLoss",
+    "abdoPain",
+    "bonePain",
+    "nonSpecPain"],
+    validator:validateNonSpecific,
+    displayAs: "Non-specific symptoms",
+    requirements:"Chest X Ray, FIT test,Urine Dipstick and culture, FBC, U&E, ESR, CRP, Thyroid funtion, LFT, globulins, HBA1c, Bone Profile, Ferritin, Iron Studies, B12, Folate"}
 
 ]
-
-
 export default validatorIndex

@@ -50,7 +50,7 @@ orderPathways(formData)
             }
         )
                 // boosts priority of path if two week rule valid    
-            if (formData.twrValid[path])
+            if (formData.twrValid[path] || path==="retinoblastoma")// also boosts retinoblatoma due to possible need for emergency referal.
                 {
                score += this.twrBoost
                 }
@@ -87,7 +87,8 @@ findValidators(formData)
     this.validators=[]
     formData.pathsToUse=[]
      validatorIndex.forEach(pathway=>{
-         if (!sexExclude[formData.sex].includes(pathway.path))
+         if (!sexExclude[formData.sex].includes(pathway.path) && (formData.age <= 15 || !sexExclude.notChild.includes(pathway.path)))
+         // excludes pathways not relevant for sex or age.
          {
     formData.symptomList.some(symptom=>{
     if( pathway["symptoms"].includes(symptom))

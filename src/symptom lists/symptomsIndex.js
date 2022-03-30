@@ -32,7 +32,7 @@ const symptomsIndex=
     [skin, "Skin"],
     [musculoskeletal, "Musculoskeletal"],
     [headNeck, "Head & Neck"],
-    [labTests, "Lab Tests"],
+    [labTests, "Lab Tests      "],
     [imaging, "Imaging"]
 ]
 

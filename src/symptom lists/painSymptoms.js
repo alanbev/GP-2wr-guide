@@ -22,8 +22,12 @@ displayAs:"Back Pain"
 },
 
 {symptom: "bonePain",
-displayAs: "Persistent / unexplained bone pain"
+displayAs: "Persistent / unexplained bone pain"},
+
+{symptom: "nonSpecPain",
+displayAs: "Persistent non-specific pain"
 },
+
 {symptom:"alcLnPain",
 displayAs:"Alcohol-induced lymph node pain"
 }

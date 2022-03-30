@@ -34,6 +34,15 @@ const nonSpecSymptomsList=
     {symptom:"diabetes",
     displayAs: "New-onset Diabetes"},
 
+    {symptom:"dvt",
+    displayAs:"Deep vein thrombosis"},
+
+    {symptom: "malaise",
+    displayAs: "Malaise"},
+
+    {symptom: "childConcern",
+    displayAs: "Persistent concern (children)"}
+
 ]
 
 

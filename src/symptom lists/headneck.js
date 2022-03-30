@@ -26,6 +26,20 @@ displayAs:"Thyroid lump",
 
 {symptom:"cns",
 displayAs:"CNS dysfunction",
+},
+
+{
+symptom: "squint",
+displayAs: "Squint (children)"
+},
+
+{symptom: "lossRedReflex",
+displayAs: "Loss of red reflex (children)"
+},
+
+{symptom: "headache",
+displayAs: "Headache"
 }
+
 ]
 export default headNeck
