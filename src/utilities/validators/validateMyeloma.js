@@ -20,7 +20,7 @@ const validateMyeloma=(formData)=>
         {
         formData.message.myeloma ="Consider very urgent protein electrophoresis and a Bence–Jones protein urine test (within 48 hours) to assess for myeloma if the plasma viscosity or erythrocyte sedimentation rate and presentation are consistent with possible myeloma."
 
-        formData.investigations.myeloma.push("Plasma Protein electrophoresis", "Urine Bence-Jones protein")
+        formData.investigations.push("Plasma Protein electrophoresis", "Urine Bence-Jones protein")
 
         return formData
         }

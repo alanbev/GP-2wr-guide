@@ -89,17 +89,17 @@ findValidators(formData)
      validatorIndex.forEach(pathway=>{
          if (!sexExclude[formData.sex].includes(pathway.path) && (formData.age <= 15 || !sexExclude.notChild.includes(pathway.path)))
          // excludes pathways not relevant for sex or age.
-         {
-    formData.symptomList.some(symptom=>{
-    if( pathway["symptoms"].includes(symptom))
-        {
-        this.validators.push(pathway.validator)
-        formData.pathsToUse.push(pathway.path)
-        formData.twrValid[pathway.path]=false
-        formData.message[pathway.path]=""
-        return true
-        }
-        return false
+            {
+            formData.symptomList.some(symptom=>{
+            if( pathway["symptoms"].includes(symptom))
+                {
+                this.validators.push(pathway.validator)
+                formData.pathsToUse.push(pathway.path)
+                formData.twrValid[pathway.path]=false
+                formData.message[pathway.path]=""
+                return true
+                }
+            return false
     }
     )}})
         }

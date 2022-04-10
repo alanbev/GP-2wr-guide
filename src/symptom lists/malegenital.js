@@ -4,7 +4,7 @@ const maleGenital =
 displayAs:"Prostate feels malignant on PR"},
 
 {symptom: "erectileDysfunction",
-displayAs: "Erectile Dysfunction"},
+displayAs: "Erectile dysfunction"},
 
 {symptom: "testisEnlargement",
 displayAs: "Painless testicular enlargement"},

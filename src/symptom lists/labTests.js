@@ -25,7 +25,7 @@ const labTests=
     },  
     
     {symptom: "hypercalcaemia",
-    displayAs: "Hypercacaemia"
+    displayAs: "Hypercalcaemia"
     }, 
     
     {symptom:"elevatedGlucose",
