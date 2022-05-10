@@ -1,13 +1,14 @@
 import React from 'react';
-import {Field} from 'formik';  
+import { Field } from 'formik';
 
 function InputItem(props) {
-  
+
     return (
-         <p>  
-        <label htmlFor ={props.symptom.symptom}>{props.symptom.displayAs}</label>
-        <Field type="checkbox" id={props.symptom.symptom} name={props.symptom.symptom} onClick={props.handleChange} />
-         </p>   
+        <p>
+
+            <Field type="checkbox" id={props.symptom.symptom} name={props.symptom.symptom} onClick={props.handleChange} />
+            <label htmlFor={props.symptom.symptom}>{props.symptom.displayAs}</label>
+        </p>
     );
 }
 
