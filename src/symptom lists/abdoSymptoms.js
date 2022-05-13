@@ -16,7 +16,7 @@ displayAs: "Hepatosplenomegaly"
 displayAs: "Splenomegaly"},
 
 {symptom:"LiverGbMass",
-displayAs:"Liver or Gallbladdder Mass"
+displayAs:"Liver or Gallbladder Mass"
 },
 
 {symptom:"abdoMass",

@@ -1,13 +1,22 @@
+
+.pathDisplayBlockCommon{
+margin: 10px;
+border:solid magenta;
+
+}
 .pathDisplayBlocktwr{
+    margin: 10px;
     border:solid magenta;
-    background-color:red
+    background-color:rgb(255, 96, 96)
 }
 .pathDisplayBlockConditional{
+    margin: 10px;
     border:solid magenta;
     background-color: lightgoldenrodyellow;
     }
 
 .pathDisplayBlockNotTwr{
+    margin: 10px;
     border:solid magenta;
     background-color: lightgreen
     }
@@ -21,6 +30,7 @@
 }
 
 #investigationsBlock{
+    margin:10px;
     background-color: palevioletred;
 }
 #hidden{

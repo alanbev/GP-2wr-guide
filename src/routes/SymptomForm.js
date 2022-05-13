@@ -11,7 +11,7 @@ import DisplaySwitch from '../components/displaySwitch';
 import ChooseSex from '../components/chooseSex';
 import IdAnaemia from '../components/IdAnaemia';
 import CheckMelanomaCriteria from '../components/checkMelanomaCriteria';
-import { Container, Alert, Box, Typography, Button, Stack } from '@mui/material';
+import { Container, Alert, Box, Typography, Button, Grid } from '@mui/material';
 
 function SymptomForm(props) {
   const navigate = useNavigate();
@@ -80,7 +80,7 @@ function SymptomForm(props) {
   return (
     <Container component={'main'} maxWidth='xl' >
 
-      {/* <span id="displaySwitch"><DisplaySwitch accordian={accordian} setAccordian={setAccordian} /></span>  */}
+      <span id="displaySwitch"><DisplaySwitch accordian={accordian} setAccordian={setAccordian} /></span>  
 
       <Alert sx={{ mb: 1 }} severity='warning'>Development version - not for clinical use.</Alert>
 
@@ -103,11 +103,12 @@ function SymptomForm(props) {
             {errorMsg => <Alert severity='error' >{errorMsg}</Alert>}
           </ErrorMessage>
 
-          <Stack>{allSymptoms}
+          <Grid container alignItems="stretch" spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 } }>
+            {allSymptoms}
             {/* <input type="submit" value="Show NICE Recommendations" /> */}
-
+          </Grid>
             <Button sx={{ m: 1 }} variant='contained' type='submit'>Show NICE Recommendations</Button>
-          </Stack>
+        
         </Form>
       </Formik>
       <CheckMelanomaCriteria showMelanomaCriteria={showMelanomaCriteria} setMelanoma={setMelanoma}></CheckMelanomaCriteria>

@@ -3,6 +3,7 @@ import '../css/App.css';
 import validatorIndex from "../utilities/validators/validatorIndex";
 import NonTwrRefOption from "./nonTwrRefOption";
 import TwrPathRequirement from "./twrPathRequirement";
+import { Box } from  '@mui/material';
 
 
 function PathDisplayBlock(props){
@@ -46,11 +47,11 @@ function PathDisplayBlock(props){
     let messageToDisplay=((message !=="" || twrPaths[props.eachPath[0]]) ? message : notTWR)
 
     return(
-    <div className={displayStyle}>
+    <Box className={displayStyle}>
     <h2>{header}</h2>
     <div className="pathMessage">{messageToDisplay}</div>
     <div className="pathToOffer">{pathWayToOffer} </div>
-    </div>
+    </Box>
     )
     }
 

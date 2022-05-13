@@ -18,35 +18,7 @@ display: flex;
 flex-wrap: wrap;
 }
 
-.blocktitle{
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  margin-bottom: 10px;
-  }
 
-  .wideblocktitle{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 10px;
-    min-width: 30%;
-    }
-
-.questionblock{
-  background-color: antiquewhite;
-  border:black solid ;
-  margin: 20px;
-  align-self: flex-start;
-  }
-
-  .widequestionblock{
-    background-color: antiquewhite;
-    border:black solid ;
-    margin: 20px;
-    min-width: 30%;
-    align-self: flex-start;
-    }
 
 #twroptions{
   display: inline
@@ -69,3 +41,5 @@ font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
   color: rgb(3, 3, 97);
 }
+
+
